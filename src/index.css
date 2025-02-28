@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --booking-blue: #003580;
+  --booking-blue-light: #006ce4;
+  --booking-yellow: #febb02;
+}
+
+body {
+  font-family: 'Nunito', sans-serif;
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-[#006ce4] text-white font-semibold py-2 px-4 rounded hover:bg-[#00509b] transition-colors;
+  }
+  
+  .btn-secondary {
+    @apply bg-[#febb02] text-[#003580] font-semibold py-2 px-4 rounded hover:bg-[#f5a700] transition-colors;
+  }
+  
+  .container-custom {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+}
